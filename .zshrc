@@ -16,6 +16,9 @@ fi
 export GOPATH=$HOME
 export PATH=$GOPATH/bin:$PATH
 
+# direnv
+eval "$(direnv hook zsh)"
+
 function peco-src () {
   local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
   if [ -n "$selected_dir" ]; then
