@@ -47,6 +47,7 @@ parser: babel-eslint
 rules:
 
   # Possible Errors
+  no-console   : 1
   no-extra-semi: 2
 
   # Best Practices
