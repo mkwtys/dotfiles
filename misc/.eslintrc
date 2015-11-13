@@ -2,7 +2,6 @@
 # http://eslint.org/
 
 ecmaFeatures:
-
   arrowFunctions                  : true
   binaryLiterals                  : true
   blockBindings                   : true
@@ -30,7 +29,6 @@ ecmaFeatures:
 
 
 env:
-
   browser  : true
   node     : true
   commonjs : true
@@ -45,7 +43,6 @@ parser: babel-eslint
 
 
 rules:
-
   # Possible Errors
   no-console   : 1
   no-extra-semi: 2
@@ -55,10 +52,10 @@ rules:
   no-multi-spaces: 2
 
   # Stylistic Issues
-  array-bracket-spacing      : [2, "never"]
-  block-spacing              : [2, "always"]
-  computed-property-spacing  : [2, "never"]
+  array-bracket-spacing      : [2, 'never']
+  block-spacing              : [2, 'always']
   comma-spacing              : [2, {'before': false, 'after': true}]
+  computed-property-spacing  : [2, 'never']
   eol-last                   : 2
   indent                     : [2, 2, {VariableDeclarator: 2, SwitchCase: 1}]
   no-spaced-func             : 2
