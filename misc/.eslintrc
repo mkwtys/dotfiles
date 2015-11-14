@@ -39,9 +39,6 @@ env:
 extends: eslint:recommended
 
 
-parser: babel-eslint
-
-
 rules:
   # Possible Errors
   no-console   : 1
