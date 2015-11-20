@@ -1,2 +1,6 @@
 *~
 .DS_Store
+
+# Node.js
+npm-debug.log
+node_modules
