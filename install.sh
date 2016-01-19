@@ -1,8 +1,7 @@
 #!/usr/bin/env sh
 
-for f in .??*
+dotfiles=".vim .gitconfig .gitignore_global .npmrc .vimrc .zshrc"
+for dotfile in $dotfiles
 do
-  [ "$f" = ".git" ] && continue
-  [ "$f" == ".DS_Store" ] && continue
-  ln -snfv "$PWD/$f" "$HOME"/"$f"
+  ln -s "$PWD/$dotfile" $HOME
 done
