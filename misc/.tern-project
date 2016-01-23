@@ -10,8 +10,6 @@
       "strong": true
     },
     "es_modules": {},
-    "lint": {},
-    "modules": {},
-    "node": {}
+    "lint": {}
   }
 }
