@@ -33,3 +33,5 @@ function peco-src () {
 }
 zle -N peco-src
 bindkey '^]' peco-src
+
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
