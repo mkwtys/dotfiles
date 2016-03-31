@@ -19,8 +19,34 @@ parserOptions:
 rules:
 
   # Possible Errors
+  # comma-dangle                 : 1 # recommended
+  # no-cond-assign               : 1 # recommended
+  # no-console                   : 1 # recommended
+  # no-constant-condition        : 1 # recommended
+  # no-control-regex             : 1 # recommended
+  # no-debugger                  : 1 # recommended
+  # no-dupe-args                 : 1 # recommended
+  # no-dupe-keys                 : 1 # recommended
+  # no-duplicate-case            : 1 # recommended
+  # no-empty                     : 1 # recommended
+  # no-empty-character-class     : 1 # recommended
+  # no-ex-assign                 : 1 # recommended
+  # no-extra-boolean-cast        : 1 # recommended
   no-extra-parens              : 1
+  no-extra-semi                : 1 # fixable
+  # no-func-assign               : 1 # recommended
+  # no-inner-declarations        : 1 # recommended
+  # no-invalid-regexp            : 1 # recommended
+  # no-irregular-whitespace      : 1 # recommended
+  # no-negated-in-lhs            : 1 # recommended
+  # no-obj-calls                 : 1 # recommended
+  # no-regex-spaces              : 1 # recommended
+  # no-sparse-arrays             : 1 # recommended
+  # no-unexpected-multiline      : 1 # recommended
+  # no-unreachable               : 1 # recommended
+  # use-isnan                    : 1 # recommended
   valid-jsdoc                  : 1
+  # valid-typeof                 : 1 # recommended
 
   # Best Practices
   accessor-pairs               : 1
@@ -36,14 +62,16 @@ rules:
   guard-for-in                 : 1
   no-alert                     : 1
   no-caller                    : 1
+  # no-case-declarations         : 1 # recommended
   no-div-regex                 : 1
   no-else-return               : 1
   no-empty-function            : 1
+  # no-empty-pattern             : 1 # recommended
   no-eq-null                   : 1
   no-eval                      : 1
   no-extend-native             : 1
   no-extra-bind                : 1
-  no-extra-label               : 1
+  # no-fallthrough               : 1 # recommended
   no-floating-decimal          : 1
   no-implicit-coercion         : 1
   no-implicit-globals          : 1
@@ -54,22 +82,26 @@ rules:
   no-lone-blocks               : 1
   no-loop-func                 : 1
   no-magic-numbers             : 1
-  no-multi-spaces              : 1
+  no-multi-spaces              : 1 # fixable
   no-multi-str                 : 1
   no-native-reassign           : 1
   no-new                       : 1
   no-new-func                  : 1
   no-new-wrappers              : 1
+  # no-octal                     : 1 # recommended
   no-octal-escape              : 1
   no-param-reassign            : 1
   no-proto                     : 1
+  # no-redeclare                 : 1 # recommended
   no-return-assign             : 1
   no-script-url                : 1
+  # no-self-assign               : 1 # recommended
   no-self-compare              : 1
   no-sequences                 : 1
   no-throw-literal             : 1
   no-unmodified-loop-condition : 1
   no-unused-expressions        : 1
+  # no-unused-labels             : 1 # recommended
   no-useless-call              : 1
   no-useless-concat            : 1
   no-useless-escape            : 1
@@ -87,12 +119,15 @@ rules:
   # Variables
   init-declarations            : 1
   no-catch-shadow              : 1
+  # no-delete-var                : 1 # recommended
   no-label-var                 : 1
   no-restricted-globals        : 1
   no-shadow                    : 1
   no-shadow-restricted-names   : 1
+  # no-undef                     : 1 # recommended
   no-undef-init                : 1
   no-undefined                 : 1
+  # no-unused-vars               : 1 # recommended
   no-use-before-define         : 1
 
   # Node.js and CommonJS
@@ -108,25 +143,25 @@ rules:
   no-sync                      : 1
 
   # Stylistic Issues
-  array-bracket-spacing        : 1
-  block-spacing                : 1
+  array-bracket-spacing        : 1 # fixable
+  block-spacing                : 1 # fixable
   brace-style                  : 1
   camelcase                    : 1
-  comma-spacing                : 1
+  comma-spacing                : 1 # fixable
   comma-style                  : 1
-  computed-property-spacing    : 1
+  computed-property-spacing    : 1 # fixable
   consistent-this              : 1
-  eol-last                     : 1
+  eol-last                     : 1 # fixable
   func-names                   : 1
   func-style                   : 1
   id-blacklist                 : 1
   id-length                    : 1
   id-match                     : 1
-  indent                       : 1
-  jsx-quotes                   : 1
+  indent                       : 1 # fixable
+  jsx-quotes                   : 1 # fixable
   key-spacing                  : 1
-  keyword-spacing              : 1
-  linebreak-style              : 1
+  keyword-spacing              : 1 # fixable
+  linebreak-style              : 1 # fixable
   lines-around-comment         : 1
   max-depth                    : 1
   max-len                      : 1
@@ -144,47 +179,54 @@ rules:
   no-continue                  : 1
   no-inline-comments           : 1
   no-lonely-if                 : 1
+  # no-mixed-spaces-and-tabs     : 1 # recommended
   no-multiple-empty-lines      : 1
   no-negated-condition         : 1
   no-nested-ternary            : 1
   no-new-object                : 1
   no-plusplus                  : 1
   no-restricted-syntax         : 1
-  no-spaced-func               : 1
+  no-spaced-func               : 1 # fixable
   no-ternary                   : 1
-  no-trailing-spaces           : 1
+  no-trailing-spaces           : 1 # fixable
   no-underscore-dangle         : 1
   no-unneeded-ternary          : 1
   no-whitespace-before-property: 1
-  object-curly-spacing         : 1
+  object-curly-spacing         : 1 # fixable
   one-var                      : 1
   one-var-declaration-per-line : 1
   operator-assignment          : 1
   operator-linebreak           : 1
   padded-blocks                : 1
   quote-props                  : 1
-  quotes                       : 1
+  quotes                       : 1 # fixable
   require-jsdoc                : 1
-  semi                         : 1
-  semi-spacing                 : 1
+  semi                         : 1 # fixable
+  semi-spacing                 : 1 # fixable
   sort-imports                 : 1
   sort-vars                    : 1
-  space-before-blocks          : 1
-  space-before-function-paren  : 1
-  space-in-parens              : 1
-  space-infix-ops              : 1
-  space-unary-ops              : 1
+  space-before-blocks          : 1 # fixable
+  space-before-function-paren  : 1 # fixable
+  space-in-parens              : 1 # fixable
+  space-infix-ops              : 1 # fixable
+  space-unary-ops              : 1 # fixable
   spaced-comment               : 1
   wrap-regex                   : 1
 
   # ECMAScript 6
   arrow-body-style             : 1
   arrow-parens                 : 1
-  arrow-spacing                : 1
-  generator-star-spacing       : 1
+  arrow-spacing                : 1 # fixable
+  # constructor-super            : 1 # recommended
+  generator-star-spacing       : 1 # fixable
+  # no-class-assign              : 1 # recommended
   no-confusing-arrow           : 1
+  # no-const-assign              : 1 # recommended
+  # no-dupe-class-members        : 1 # recommended
   no-duplicate-imports         : 1
+  # no-new-symbol                : 1 # recommended
   no-restricted-imports        : 1
+  # no-this-before-super         : 1 # recommended
   no-useless-constructor       : 1
   no-var                       : 1
   object-shorthand             : 1
@@ -195,25 +237,5 @@ rules:
   prefer-spread                : 1
   prefer-template              : 1
   require-yield                : 1
-  template-curly-spacing       : 1
-  yield-star-spacing           : 1
-
-  # Removed
-  # generator-star
-  # global-strict
-  # no-arrow-condition
-  # no-comma-dangle
-  # no-empty-class
-  # no-empty-label
-  # no-extra-strict
-  # no-reserved-keys
-  # no-space-before-semi
-  # no-wrap-func
-  # space-after-function-name
-  # space-after-keywords
-  # space-before-function-parentheses
-  # space-before-keywords
-  # space-in-brackets
-  # space-return-throw-case
-  # space-unary-word-ops
-  # spaced-line-comment
+  template-curly-spacing       : 1 # fixable
+  yield-star-spacing           : 1 # fixable
