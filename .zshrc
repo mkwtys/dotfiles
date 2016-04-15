@@ -19,9 +19,6 @@ export PATH=$GOPATH/bin:$PATH
 # direnv
 eval "$(direnv hook zsh)"
 
-# Visual Studio Code
-vscode () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-
 # peco
 function peco-src () {
   local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
