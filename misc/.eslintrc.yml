@@ -19,8 +19,7 @@ parserOptions:
 rules:
 
   # Possible Errors
-  no-extra-parens              : 1
-  no-extra-semi                : 1 # fixable
+  no-extra-parens              : 1 # fixable
   valid-jsdoc                  : 1
 
   # Best Practices
@@ -44,6 +43,7 @@ rules:
   no-eval                      : 1
   no-extend-native             : 1
   no-extra-bind                : 1
+  no-extra-label               : 1
   no-floating-decimal          : 1
   no-implicit-coercion         : 1
   no-implicit-globals          : 1
@@ -174,7 +174,7 @@ rules:
   space-in-parens              : 1 # fixable
   space-infix-ops              : 1 # fixable
   space-unary-ops              : 1 # fixable
-  spaced-comment               : 1
+  spaced-comment               : 1 # fixable
   wrap-regex                   : 1
 
   # ECMAScript 6
@@ -200,47 +200,48 @@ rules:
 
   # Recommended
   # comma-dangle
-  # constructor-super
-  # no-case-declarations
-  # no-class-assign
-  # no-const-assign
   # no-cond-assign
   # no-console
   # no-constant-condition
   # no-control-regex
   # no-debugger
-  # no-delete-var
   # no-dupe-args
-  # no-dupe-class-members
   # no-dupe-keys
   # no-duplicate-case
   # no-empty
   # no-empty-character-class
-  # no-empty-pattern
   # no-ex-assign
   # no-extra-boolean-cast
-  # no-fallthrough
+  # no-extra-semi
   # no-func-assign
   # no-inner-declarations
   # no-invalid-regexp
   # no-irregular-whitespace
-  # no-mixed-spaces-and-tabs
   # no-negated-in-lhs
-  # no-new-symbol
-  # no-octal
   # no-obj-calls
-  # no-redeclare
   # no-regex-spaces
-  # no-self-assign
   # no-sparse-arrays
-  # no-this-before-super
-  # no-undef
   # no-unexpected-multiline
   # no-unreachable
-  # no-unused-labels
-  # no-unused-vars
   # use-isnan
   # valid-typeof
+  # no-case-declarations
+  # no-empty-pattern
+  # no-fallthrough
+  # no-octal
+  # no-redeclare
+  # no-self-assign
+  # no-unused-labels
+  # no-delete-var
+  # no-undef
+  # no-unused-vars
+  # no-mixed-spaces-and-tabs
+  # constructor-super
+  # no-class-assign
+  # no-const-assign
+  # no-dupe-class-members
+  # no-new-symbol
+  # no-this-before-super
 
   # Removed
   # generator-star
