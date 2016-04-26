@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="pure"
 DISABLE_AUTO_TITLE="true"
-plugins=(git node npm)
+plugins=(git node npm zsh-syntax-highlighting)
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
