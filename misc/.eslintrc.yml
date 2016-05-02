@@ -20,6 +20,7 @@ rules:
 
   # Possible Errors
   no-extra-parens              : 1 # fixable
+  no-unsafe-finally            : 1
   valid-jsdoc                  : 1
 
   # Best Practices
@@ -185,6 +186,7 @@ rules:
   no-confusing-arrow           : 1
   no-duplicate-imports         : 1
   no-restricted-imports        : 1
+  no-useless-computed-key      : 1
   no-useless-constructor       : 1
   no-var                       : 1
   object-shorthand             : 1
