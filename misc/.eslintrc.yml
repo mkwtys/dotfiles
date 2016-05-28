@@ -20,6 +20,7 @@ rules:
 
   # Possible Errors
   no-extra-parens              : 1 # fixable
+  no-prototype-builtins        : 1
   no-unsafe-finally            : 1
   valid-jsdoc                  : 1
 
@@ -177,6 +178,7 @@ rules:
   space-infix-ops              : 1 # fixable
   space-unary-ops              : 1 # fixable
   spaced-comment               : 1 # fixable
+  unicode-bom                  : 1 # fixable
   wrap-regex                   : 1
 
   # ECMAScript 6
@@ -189,6 +191,7 @@ rules:
   no-restricted-imports        : 1
   no-useless-computed-key      : 1
   no-useless-constructor       : 1
+  no-useless-rename            : 1
   no-var                       : 1
   object-shorthand             : 1
   prefer-arrow-callback        : 1
