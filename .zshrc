@@ -16,6 +16,13 @@ fi
 export GOPATH=$HOME
 export PATH=$GOPATH/bin:$PATH
 
+# rbenv
+if [ -d $HOME/.rbenv/ ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+  rbenv global 2.3.1
+fi
+
 # direnv
 eval "$(direnv hook zsh)"
 
