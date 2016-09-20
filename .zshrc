@@ -36,6 +36,6 @@ function peco-src () {
   zle clear-screen
 }
 zle -N peco-src
-bindkey '^]' peco-src
+bindkey '^x' peco-src
 
 [ -f $HOME/.zshrc.local ] && source $HOME/.zshrc.local
