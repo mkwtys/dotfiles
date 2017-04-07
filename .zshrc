@@ -1,6 +1,6 @@
 # oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="pure"
+ZSH_THEME="refined"
 DISABLE_AUTO_TITLE="true"
 plugins=(git node npm zsh-syntax-highlighting)
 export PATH=$HOME/bin:/usr/local/bin:$PATH
