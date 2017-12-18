@@ -56,3 +56,6 @@ bindkey '^r' peco-select-history
 [ -f $HOME/.zshrc.local ] && source $HOME/.zshrc.local
 
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+# android sdk
+export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
