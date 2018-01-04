@@ -9,7 +9,7 @@ source $ZSH/oh-my-zsh.sh
 # nodebrew
 if [ -f $HOME/.nodebrew/nodebrew ]; then
   export PATH=$HOME/.nodebrew/current/bin:$PATH
-  nodebrew use v6
+  nodebrew use v8
 fi
 
 # go
