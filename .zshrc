@@ -23,6 +23,11 @@ if [ -d $HOME/.rbenv/ ]; then
   rbenv global 2.3.1
 fi
 
+# phpbrew
+if [ -d $HOME/.phpbrew/ ]; then
+  source $HOME/.phpbrew/bashrc
+fi
+
 # direnv
 eval "$(direnv hook zsh)"
 
