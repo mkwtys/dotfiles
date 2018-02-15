@@ -5,5 +5,9 @@
 ~$*.xlsx
 
 # Node.js
-npm-debug.log
 node_modules
+npm-debug.log
+
+.yarn-integrity
+yarn-debug.log
+yarn-error.log
