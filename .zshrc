@@ -23,9 +23,10 @@ if [ -d $HOME/.rbenv/ ]; then
   rbenv global 2.3.1
 fi
 
-# phpbrew
-if [ -d $HOME/.phpbrew/ ]; then
-  source $HOME/.phpbrew/bashrc
+# phpenv
+if [ -d $HOME/.phpenv/ ]; then
+  export PATH="$HOME/.phpenv/bin:$PATH"
+  eval "$(phpenv init -)"
 fi
 
 # direnv
