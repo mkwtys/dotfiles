@@ -1,3 +1,7 @@
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+
 # oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="refined"
