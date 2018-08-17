@@ -69,3 +69,6 @@ export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
 # android sdk
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+
+# arduino avrdude
+PATH=$PATH:~/bin:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/ 
