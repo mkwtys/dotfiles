@@ -4,6 +4,9 @@ setopt hist_ignore_space
 
 export PATH=/usr/local/sbin:$PATH
 
+# zshrc.local 
+[ -f $HOME/.zshrc.local ] && source $HOME/.zshrc.local
+
 # oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="refined"
@@ -35,6 +38,15 @@ fi
 # direnv
 eval "$(direnv hook zsh)"
 
+# openssl
+export PATH=$HOME/usr/local/opt/openssl@1.1/bin:$PATH
+
+# android sdk
+export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+
+# arduino avrdude
+PATH=$PATH:$HOME/bin:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/ 
+
 # peco
 function peco-src () {
   local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
@@ -61,13 +73,3 @@ function peco-select-history() {
 
 zle -N peco-select-history
 bindkey '^r' peco-select-history
-
-[ -f $HOME/.zshrc.local ] && source $HOME/.zshrc.local
-
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-
-# android sdk
-export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
-
-# arduino avrdude
-PATH=$PATH:~/bin:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/ 
