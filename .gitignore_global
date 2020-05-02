@@ -83,3 +83,6 @@ typings/
 
 #DynamoDB Local files 
 .dynamodb/ 
+
+# direnv environment variables file
+.envrc
