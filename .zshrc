@@ -15,12 +15,6 @@ plugins=(git node npm zsh-syntax-highlighting)
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
-# nodebrew
-if [ -f $HOME/.nodebrew/nodebrew ]; then
-  export PATH=$HOME/.nodebrew/current/bin:$PATH
-  nodebrew use v14
-fi
-
 #volta
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
