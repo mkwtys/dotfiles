@@ -27,7 +27,7 @@ export PATH=$GOPATH/bin:$PATH
 if [ -d $HOME/.rbenv/ ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
-  rbenv global 2.3.1
+  # rbenv global 2.3.1
 fi
 
 # phpbrew
@@ -43,7 +43,10 @@ export PATH=$HOME/usr/local/opt/openssl@1.1/bin:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
 # arduino avrdude
-PATH=$PATH:$HOME/bin:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/ 
+PATH=$PATH:$HOME/bin:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/
+
+# flutter
+export PATH="$PATH:$HOME/src/github.com/flutter/flutter/bin"
 
 # peco
 function peco-src () {
