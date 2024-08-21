@@ -4,7 +4,7 @@ setopt hist_ignore_space
 
 export PATH=/usr/local/sbin:$PATH
 
-# zshrc.local 
+# zshrc.local
 [ -f $HOME/.zshrc.local ] && source $HOME/.zshrc.local
 
 # oh-my-zsh
@@ -49,7 +49,7 @@ PATH=$PATH:$HOME/bin:/Applications/Arduino.app/Contents/Java/hardware/tools/avr/
 export PATH="$PATH:$HOME/src/github.com/flutter/flutter/bin"
 
 # peco
-function peco-src () {
+function peco-src() {
   local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
   if [ -n "$selected_dir" ]; then
     BUFFER="cd ${selected_dir}"
