@@ -11,8 +11,7 @@ export PATH=/usr/local/sbin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="refined"
 DISABLE_AUTO_TITLE="true"
-plugins=(git node npm zsh-syntax-highlighting)
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+plugins=(git node npm)
 source $ZSH/oh-my-zsh.sh
 
 #volta
