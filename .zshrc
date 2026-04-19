@@ -62,19 +62,21 @@ alias python='python3'
 # docker
 alias docker-compose="docker compose"
 
-# peco
-function peco-src() {
-  local selected_dir=$(ghq list --full-path | peco)
-  if [ -n "$selected_dir" ]; then
-    cd "$selected_dir"
-  fi
-}
-
-
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
+
+# peco
+function peco-src() {
+  local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-src
+bindkey '^]' peco-src
