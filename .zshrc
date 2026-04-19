@@ -50,6 +50,9 @@ export PATH="$PATH:$HOME/src/github.com/flutter/flutter/bin"
 # python
 alias python='python3'
 
+# docker
+alias docker-compose="docker compose"
+
 # peco
 function peco-src() {
   local selected_dir=$(ghq list --full-path | peco)
@@ -58,3 +61,11 @@ function peco-src() {
   fi
 }
 
+
+# pnpm
+export PNPM_HOME="/Users/maekawa/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
