@@ -19,9 +19,8 @@ DISABLE_AUTO_TITLE="true"
 plugins=(git node npm)
 source $ZSH/oh-my-zsh.sh
 
-#volta
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+#mise
+eval "$(mise activate zsh)"
 
 # go
 export GOPATH=$HOME
