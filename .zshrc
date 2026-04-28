@@ -16,7 +16,12 @@ fi
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="refined"
 DISABLE_AUTO_TITLE="true"
-plugins=(git node npm)
+plugins=(
+  git
+  node
+  npm
+  zsh-autosuggestions
+)
 source $ZSH/oh-my-zsh.sh
 
 #mise
@@ -32,9 +37,6 @@ if [ -d $HOME/.rbenv/ ]; then
   eval "$(rbenv init -)"
   # rbenv global 2.3.1
 fi
-
-# phpbrew
-[[ -e $HOME/.phpbrew/bashrc ]] && source $HOME/.phpbrew/bashrc
 
 # direnv
 eval "$(direnv hook zsh)"
@@ -67,6 +69,11 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+# pnpm end
+
+# asdf
+export ASDF_DIR="$HOME/.asdf"
+export PATH="$ASDF_DIR/shims:$ASDF_DIR/bin:$PATH"
 
 # peco
 function peco-src() {
