@@ -75,14 +75,11 @@ esac
 export ASDF_DIR="$HOME/.asdf"
 export PATH="$ASDF_DIR/shims:$ASDF_DIR/bin:$PATH"
 
-# peco
-function peco-src() {
-  local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
-  if [ -n "$selected_dir" ]; then
-    BUFFER="cd ${selected_dir}"
-    zle accept-line
+cd_repo() {
+  local selected="$(ghq list | fzf)"
+
+  if [[ -n "$selected" ]]; then
+    cd "$(ghq root)/$selected"
   fi
-  zle clear-screen
 }
-zle -N peco-src
-bindkey '^]' peco-src
+bindkey -s '^]' 'cd_repo\n'
